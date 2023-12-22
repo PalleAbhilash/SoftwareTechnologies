@@ -1,0 +1,266 @@
+*{
+    padding:0px;
+    margin:0px;
+    transition: all 0.2s;
+}
+#main
+{
+    width: 100vw;
+    height:100vh;
+}
+#navbar
+{
+    width: 100vw;
+    height:10vh;
+    background-color: #ececec;
+}
+#list
+{
+    position: relative;
+    top: 0px;
+    display: flex;
+    height: 10vh;
+    font-size: 25px;
+    margin-left: 1150px;
+    font-weight: bold;
+}
+.items
+{
+    margin-left: 20px;
+    padding-top: 15px;
+}
+.items:hover
+{
+    transform: translate(2px,2px);
+    cursor: pointer;
+    background-color: #ff894c;
+}
+#rotate
+{
+    width: 50px;
+    height: 50px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    left:-1120px;
+    top:10px;
+}
+#login
+{
+    text-decoration: none;
+    color: black;
+    height: 8vh;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#signup
+{
+    text-decoration: none;
+    color: black;
+    height: 8vh;
+    text-decoration: none;
+}
+#main
+{
+    width: 100vw;
+    height: 90vh;
+    background-color: #3851707e;
+    position: absolute;
+    top:10vh;
+    /* #142d4c */
+}
+.circle
+{
+    width: 150px;
+    height: 180px;
+    border-radius: 100%;
+    background-color: green;
+    position: absolute;
+    right: 0px;
+    left:650px;
+    top:250px;
+    z-index: 1;
+} 
+.circle:hover
+{
+    transform: scale(1);
+}
+#two
+{
+    width: 50vw;
+    height: 40vh;
+    background-color: #38517000;
+    position: absolute;
+    right: 200px;
+    left:680px;
+    top:50px;
+    border-radius: 20px;
+    font-size: 23px;
+    text-align: justify;
+    text-shadow: 4px 4px 4px rgba(245, 245, 245, 0.615);
+    font-style: italic;
+}
+#one
+{
+    width: 40vw;
+    height: 90vh;
+    background-image: url(./photos/pngwing.com\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0px;
+}
+#first
+{
+    position: absolute;
+    right: 0px;
+    left:690px;
+    top:450px;
+    z-index: 1;
+    border-radius: 15px;
+    background-color: white;
+}
+#first:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#second
+{
+    position: absolute;
+    right: 0px;
+    left:880px;
+    top:450px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 15px;
+}
+#second:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#third
+{
+    position: absolute;
+    right: 0px;
+    left:1070px;
+    top:450px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 15px;
+}
+#third:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#four
+{
+    position: absolute;
+    right: 0px;
+    left:1260px;
+    top:450px;
+    z-index: 1;
+    background-color:white;
+    border-radius: 15px;
+}
+#four:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#webtechnology
+{
+    width: 150px;
+    height: 130px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+#java
+{
+    width: 150px;
+    height: 130px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+#sql
+{
+    width: 150px;
+    height: 130px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+#react
+{
+    width:150px;
+    height:130px;
+    background-color: aquamarine;
+    border-radius: 15px;
+}
+#htmlblack
+{
+    width:120px;
+    height:120px;
+    position: absolute;
+    top:0px;
+    left:20px;
+    mix-blend-mode: multiply;
+}
+#javablack
+{
+    width:120px;
+    height:120px;
+    position: absolute;
+    top:0px;
+    left:20px;
+    mix-blend-mode: multiply;
+}
+#sqlblack
+{
+    width:140px;
+    height:110px;
+    position: absolute;
+    top:0px;
+    left:10px;
+    border-radius: 15px;
+    mix-blend-mode: multiply;
+}
+#reactblack
+{
+    width:140px;
+    height:110px;
+    position: absolute;
+    top:10px;
+    left:5px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+#matter1
+{
+    font-size: 20px;
+    position: absolute;
+    top:140px;
+}
+#matter2
+{
+    font-size: 20px;
+    position: absolute;
+    top:140px;
+    left:50px;
+}
+#matter3
+{
+    font-size: 20px;
+    position: absolute;
+    top:140px;
+    left:50px;
+}
+#matter4
+{
+    font-size: 20px;
+    position: absolute;
+    top:140px;
+    left:50px;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+<style>
+    *{
+    padding:0px;
+    margin:0px;
+    transition: all 0.2s;
+}
+#main
+{
+    width: 100vw;
+    height:100vh;
+}
+#navbar
+{
+    width: 100vw;
+    height:10vh;
+    background-color: #ececec;
+}
+#list
+{
+    position: relative;
+    top: 0px;
+    display: flex;
+    height: 10vh;
+    font-size: 25px;
+    margin-left: 1150px;
+    font-weight: bold;
+}
+.items
+{
+    margin-left: 20px;
+    padding-top: 15px;
+}
+.items:hover
+{
+    background-color: #ff894c;
+    cursor: pointer;
+    transform: translate(2px,2px);
+}
+#rotate
+{
+    width: 50px;
+    height: 50px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    left:-1120px;
+    top:10px;
+}
+#login
+{
+    text-decoration: none;
+    color: black;
+    height: 8vh;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+#reg
+{
+    color: red;
+}
+#registration
+{
+    width: 500px;
+    height: 665px;
+    position: absolute;
+    right: 50px;
+    left:800px;
+    border-radius: 10px;
+}
+
+#regimg{
+    position: absolute ;
+    left: 100px;
+}
+
+
+#reg
+{
+    font-size: 50px;
+    position: absolute;
+    top:50px;
+    left:130px;
+    color: rgb(50, 205, 55);
+}
+th
+{
+    font-size: 25px;
+}
+#username
+{
+    position: absolute;
+    top:200px;
+}
+#userinp
+{
+    position: absolute;
+    top:200px;
+    left:250px;
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    text-align: center;
+    color:black;
+    border: 4px green solid;
+}
+#password
+{
+    position: absolute;
+    top:280px;
+}
+#passinp
+{
+    position: absolute;
+    top:280px;
+    left:250px;
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    color:black;
+    border: 4px green solid;
+}
+#repass
+{
+    position: absolute;
+    top:360px;
+}
+#repassinp
+{
+    position: absolute;
+    top:360px;
+    left:250px;
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    border: 4px green solid;
+    font-size: 20px;
+    background-color: transparent;
+    color:black;
+}
+#log
+{
+    width: 180px;
+    font-size: 30px;
+    position: relative;
+    top:480px;
+    left: 150px;
+    border-radius: 10px;
+    border: 5px solid burlywood;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: black;
+    box-shadow: 10px 10px 10px black;
+}
+#log:hover
+{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+#eyeclose
+{
+    position: absolute;
+    width: 40px;
+    height:40px;
+    mix-blend-mode: multiply;
+    top:360px;
+    left:430px;
+}
+#eyeclose1
+{
+    position: absolute;
+    width: 40px;
+    height:40px;
+    mix-blend-mode: multiply;
+    top:280px;
+    left:430px;
+}
+#result
+{
+    position: absolute;
+    bottom: 50px;
+    color: red;
+    left:850px;
+    font-size: 30px;
+}
+a{
+    color: black;
+}
+#about,#skills,#login,#signup
+{
+    height: 8vh;
+}
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <ul id="list" type="none">
+             <img src="./photos/rotate.png" id="rotate">
+             <a href="./MenuBar.html"><li class="items" id="about">About</li></a>
+             <a href="./Skills.html"><li class="items" id="skills">Skills</li></a>
+             <a href="./Login.html"><li class="items" id="login">Login</li></a>
+             <a href="./signup.html"><li class="items" id="signup">SignUp</li></a>
+        </ul>
+     </div>
+     <div class="reg">
+     <form action="">
+     <div id="down">
+        <div id="registration">
+            <table>
+                <tr>
+                    <th id="reg" style="color: red;">Registration</th>
+                </tr>
+                <tr>
+                    <th id="username"><label>Enter Username</label></th>
+                    <td><input placeholder="Enter UserName" id="userinp"></td>
+                </tr>
+                <tr>
+                    <th id="password"><label>Enter PassWord</label></th>
+                    <td><input placeholder="Enter PassWord" id="passinp" type="password"><img src="./photos/eyeclose.jpeg" id="eyeclose1" onmousedown="fun()" onmouseup="fun1()"></td>
+                </tr>
+                <tr>
+                    <th id="repass"><label>Re-Enter Password</label></th>
+                    <td><input placeholder="Re-Enter Password" id="repassinp" type="password"><img src="./photos/eyeclose.jpeg" id="eyeclose" onmousedown="fun2()" onmouseup="fun3()"></td>
+                </tr>
+                <tr>
+                    <th><input value="Register" id="log" type="button" onclick="Register()"></th>
+                </tr>
+            </table>
+        </div>
+     </div>
+     <img id="regimg" src="https://img.freepik.com/free-vector/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37336.jpg?size=626&ext=jpg&ga=GA1.1.166025501.1702901622&semt=sph">
+     <h1 id="result"></h1>
+    </form>
+</div>
+     <script defer>
+        function fun()
+        {
+            document.getElementById("passinp").type="text";
+            document.getElementById("eyeclose1").setAttribute("src","./photos/eyeopen.jpeg");
+        }
+        function fun1()
+        {
+            document.getElementById("passinp").type="password";
+            document.getElementById("eyeclose1").setAttribute("src","./photos/eyeclose.jpeg")
+        }
+        function fun2()
+        {
+            document.getElementById("repassinp").type="text";
+            document.getElementById("eyeclose").setAttribute("src","./photos/eyeopen.jpeg")
+        }
+        function fun3()
+        {
+            document.getElementById("repassinp").type="password";
+            document.getElementById("eyeclose").setAttribute("src","./photos/eyeclose.jpeg")
+        }
+        function Register()
+        {
+            var username=document.getElementById("userinp").value
+            var password=document.getElementById("passinp").value
+            var repassword=document.getElementById("repassinp").value
+            if(username=='')
+            {
+                document.getElementById("result").innerHTML="Please Enter Valid Credentials"
+                document.getElementById("passinp").style.border='4px red solid'
+                document.getElementById("repassinp").style.border='4px red solid'
+                document.getElementById("userinp").style.border='4px red solid'
+            }
+            else
+            {
+                if(password==repassword)
+                {
+                    document.getElementById("result").innerHTML="Register Successfull"
+                }
+                else
+                {
+                    document.getElementById("result").innerHTML="Password Doesnt Match"
+                    document.getElementById("userinp").style.border='4px red green'
+                    document.getElementById("passinp").style.border='4px red solid'
+                    document.getElementById("repassinp").style.border='4px red solid'
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+<!--
+    ReactJS uses a declarative paradigm that allows for applications to be both effective and flexible. It creates simple views for each state in your application and efficiently updates and renders just the right component as your data changes. The declarative view makes your code more predictable and easier to debug. Each component in a React application is responsible for rendering a separate, reusable piece of HTML code. The ability to nest components within other components allows you to build complex applications from simple building blocks. A component can also keep track of its internal state, for example, a TabList component can hold a variable for the open tab in memory.
+-->

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+<style>
+    *{
+    padding:0px;
+    margin:0px;
+    transition: all 0.1s;
+}
+#main
+{
+    width: 100vw;
+    height:100vh;
+}
+#navbar
+{
+    width: 100vw;
+    height:10vh;
+    background-color: #ececec;
+}
+#list
+{
+    position: relative;
+    top: 0px;
+    display: flex;
+    height: 10vh;
+    font-size: 25px;
+    margin-left: 1150px;
+    font-weight: bold;
+}
+.items:hover
+{
+    background-color: #ff894c;
+    cursor: pointer;
+    transform: translate(2px,2px);
+}
+.items
+{
+    margin-left: 20px;
+    padding-top: 15px;
+}
+.items:hover
+{
+    cursor: pointer;
+}
+#mainimg
+{
+    margin-left: 900px;
+    margin-top: 20px;
+    width: 90px;
+    height:90px;
+}
+#main
+{
+    width:500px;
+    height:400px;
+    background-color:rgba(128, 128, 128, 0.786);
+    margin-left: 700px;
+    border-radius: 50px;
+    margin-top: -40px;
+    box-shadow: 10px 10px 10px black;
+}
+.inp
+{
+    width:400px;
+    height:50px;
+    margin-top: 70px;
+    margin-left: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+#user
+{
+    outline: none;
+    border: 4px green solid;
+}
+#pass
+{
+    outline: none;
+    border: 4px green solid;
+}
+#sub
+{
+    width: 120px;
+    height:40px;
+    margin-left: 200px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+   background-color: red;
+   color: white;
+   box-shadow: 5px 5px 5px black;
+}
+#sub:hover
+{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+a
+{
+    text-decoration: none;
+}
+#reg
+{
+    text-align: center;
+    position: absolute;
+    width:150px;
+    height:40px;
+    top:620px;
+    left:780px;
+    color: blue;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px black;
+    border: groove pink 8px;
+    background-color: black;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+#reg:hover
+{
+    transform: scale(1.2);
+}
+#show
+{
+    width: 30px;
+    height:30px;
+    position: relative;
+    left:-45px;
+    top:10px;
+}
+#reset
+{
+    text-align: center;
+    position: absolute;
+    width:150px;
+    height:40px;
+    top:620px;
+    left:990px;
+    font-size: 20px;
+    background-color: gainsboro;
+    border-radius: 10px;
+   font-weight: bold;
+    border: groove pink 8px;
+    background-color: black;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    color: red;
+}
+#reset:hover
+{
+    transform: scale(1.2);
+}
+#gif
+{
+    width: 400px;
+    height:400px;
+    position: absolute;
+    top:200px;
+    left:100px;
+    border-radius: 10px;
+    mix-blend-mode: screen;
+    background-color: red;
+    border: groove 10px red;
+    border-radius: 100% 100% 100% 10%;
+    box-shadow: 20px 20px 20px black;
+}
+a{
+    text-decoration: none;
+}
+#signup
+{
+    text-decoration: none;
+    color: black;
+    height: 8vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#rotate
+{
+    width: 50px;
+    height: 50px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    left:-1120px;
+    top:10px;
+    background-color: red;
+}
+#Result
+{
+    position: absolute;
+    left:830px;
+    top:580px;
+    font-size: 25px;
+    color: red;
+}
+.items
+{
+    height: 8vh;
+}
+#about,#skills,#login,#signup
+{
+    height: 8vh;
+}
+</style>
+</head>
+<body style="background-color:#68074858;">
+    <div id="navbar">
+        <ul id="list" type="none">
+            <img src="./photos/rotate.png" id="rotate">
+             <a href="./MenuBar.html"><li class="items" id="about">About</li></a>
+             <a href="./Skills.html"><li class="items" id="skills">Skills</li></a>
+             <a href="./Login.html"><li class="items" id="login">Login</li></a>
+             <a href="./signup.html"><li class="items" id="signup">SignUp</li></a>
+        </ul>
+     </div>  
+     <img id="mainimg" src="./photos/user.png">
+     <div id="main">
+         <input class="inp" type="text" placeholder="Enter UserName" id="user" required><br><br>
+         <input class="inp" id="pass" type="password" placeholder="Enter Password" required ><img id="show" src="./photos/eyeclose.jpeg" onmousedown="fun()" onmouseup="fun1()" ><br><br>
+            <input type="submit" value="Login" id="sub" onclick="abhi()">
+     </div>
+     <a href="./signup.html"><input id="reg" value="SignUp" type="button"></a>
+     <input type="reset" value="Reset" id="reset">
+     <img src="./photos/usergif.gif" id="gif">
+     <h1 id="Result"></h1>
+     <script defer>
+        var a=document.getElementsByClassName(".inp").value
+        function fun()
+        {
+            document.getElementById("pass").type="text";
+            document.getElementById("show").setAttribute("src","./photos/eyeopen.jpeg");
+        }
+        function fun1()
+        {
+            document.getElementById("pass").type="password";
+            document.getElementById("show").setAttribute("src","./photos/eyeclose.jpeg")
+        }
+        var email=document.getElementById("user").value;
+        function abhi()
+        {
+             var username=document.getElementById("user").value;
+             var pass=document.getElementById("pass").value;
+            if(username=='Abhilash')
+            {
+                    if(pass==123)
+                    {
+                        document.getElementById("Result").innerHTML="Login Successfull"
+                        document.getElementById("user").style.border='4px solid green'
+                document.getElementById("pass").style.border='4px solid green'
+                    }
+                    else
+                    {
+                        document.getElementById("Result").innerHTML="Invalid Password"
+                    }
+            }
+            else
+            {
+                document.getElementById("Result").innerHTML="Invalid UserName"
+            }
+            if(username!='Abhilash' && pass!=123)
+            {
+                document.getElementById("user").style.border='4px solid red'
+                document.getElementById("pass").style.border='4px solid red'
+                document.getElementById("Result").innerHTML="Invalid Credentials"
+            }
+           }
+        
+    </script>
+
+
+
+
+</body>
+</html>

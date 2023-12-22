@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+<style>
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: all 1.8s;
+    overflow: hidden;
+}
+#navbar
+{
+    width: 100vw;
+    height:10vh;
+    background-color: #ececec;
+}
+#list
+{
+    position: relative;
+    top: 0px;
+    display: flex;
+    height: 10vh;
+    font-size: 25px;
+    margin-left: 1150px;
+    font-weight: bold;
+}
+.items
+{
+    margin-left: 20px;
+    padding-top: 15px;
+    height: 8vh;
+}
+.items:hover
+{
+    background-color: #ff894c;
+    cursor: pointer;
+    transform: translate(2px,2px);
+}
+#rotate
+{
+    width: 50px;
+    height: 50px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    left:-1090px;
+    top:10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#login
+{
+    text-decoration: none;
+    color: black;
+    height: 8vh;
+    text-decoration: none;
+}
+#main
+{
+    width: 100vw;
+    height:10vh;
+    border: 8px groove rgba(255, 0, 0, 0.486);
+    display: inline-block;
+    margin-top: 5px;
+    background-color:#e7eaf6;
+}
+#inner
+{
+    width: 830px;
+    height:570px;
+    background-color: rgba(255, 192, 203, 0.017);
+    position: absolute;
+    left:500px;
+    top:120px;
+    border-radius: 10px 30px 40px 50px;
+    border: 5px groove greenyellow;
+}
+input
+{
+    width: 20px;
+    height: 20px;
+}
+.a,input{
+    font-size: 25px;
+    position: relative;
+    top:100px;
+    left:200px;
+} 
+#web
+{
+    font-size: 25px;
+    position: absolute;
+    top:100px;
+    left:250px;
+} 
+#check
+{
+    position: absolute;
+    top:100px;
+}
+#check1
+{
+    position: absolute;
+    top:100px;
+    left:520px;
+}
+#check4
+{
+    position: absolute;
+    top:100px;
+    left:900px;
+}
+#web1
+{
+    font-size: 25px;
+    position: absolute;
+    top:100px;
+    left:560px;
+}
+#web2
+{
+    font-size: 25px;
+    position: absolute;
+    top:100px;
+    left:750px;
+}
+#web3
+{
+    font-size: 25px;
+    position: absolute;
+    top:95px;
+    left:940px;
+}
+#check2
+{
+    position: absolute;
+    top:100px;
+    left:700px;
+}
+#webtechnology
+{
+    width: 98%;
+    height: 550px;
+    position: absolute;
+    top:180px;
+    left:15px;
+    display: none;
+    background-color: #a6e4e7;
+}
+#image
+{
+    position: absolute;
+    width: 100%;
+    height:585px;
+    border-radius: 50px;
+}
+#html,#css,#js
+{
+    width: 180px;
+    height: 180px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top:20px;
+}
+#css
+{
+    width: 350px;
+    top:200px;
+    left:-80px;
+}
+#abouthtml,#aboutcss,#aboutjs
+{
+    width:700px;
+    height: 200px;
+    font-size: 25px;
+    position: absolute;
+    left:200px;
+    top:40px;
+    font-style: italic;
+    text-align: justify;
+    color: black;
+
+}
+#aboutcss
+{
+    top:250px;
+    text-align: justify;
+}
+#js
+{
+    width: 250px;
+    height: 150px;
+    top:390px;
+    left:-35px;
+}
+#aboutjs
+{
+    top:430px;
+    text-align: justify;
+}
+#java
+{
+    width:98%;
+    height: 530px;
+    position: absolute;
+    top:190px;
+    left:10px;
+    background-color: #ffebbb;
+    display: none;
+}
+#javaimg
+{
+    width:500px;
+    height:500px;
+    position: absolute;
+    left:-80px;
+    top:-20px;
+}
+#javacontect
+{
+    width: 400px;
+    height: 800px;
+    font-size: 26px;
+    position: absolute;
+    left:330px; 
+    top:50px;
+    text-align: justify;
+    font-style: italic;
+}
+#why
+{
+    position: absolute;
+    left:900px;
+    top:120px;
+    height:400px;
+    font-size: 30px;
+    color: red;
+    font-style: italic;
+    text-shadow: 10px 10px 10px black;
+}
+#why:hover
+{
+    cursor: pointer;
+}
+#oll
+{
+    color: black;
+    position: absolute;
+    top:50px;
+    left:100px;
+    font-size: 25px;
+    width: 200px;
+    text-shadow: 20px 20px 20px whitesmoke;
+}
+#learn
+{
+    position: absolute;
+    left:980px;
+    top:200px;
+    font-size: 26px;
+    color: red;
+    font-style: italic;
+}
+#learn:hover
+{
+    cursor: pointer;
+}
+#pre
+{
+    width:100px;
+    text-align: justify;
+    font-size: 20px;
+}
+#ol1
+{
+    position: relative;
+    top:10px;
+    color: black;
+    left:50px;
+    height: 100px;
+    z-index: 1;
+}
+#sql
+{
+    width:98%;
+    height: 550px;
+    position: absolute;
+    top:180px;
+    left:13px;
+    display: none;
+    background-color: #bbe4e9;
+    
+}
+#sqlmatter
+{
+    width:1600px;
+    height:1000px;
+    position: absolute;
+    left:200px;
+    font-size: 20px;
+    top:20px;
+    text-align: justify;
+    font-style: italic;
+    mix-blend-mode: multiply;
+}
+#sqlimg
+{
+    width:600px;
+    height:600px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top:0px;
+    left:-50px;
+}
+#heading
+{
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    left:650px;
+    top:300px;
+    cursor: pointer;
+}
+#sqll
+{
+    font-size: 19px;
+    margin-left: 30px;
+    margin-top: 25px;
+    color: black;
+    text-shadow: 10px 10px 10px black;
+}
+#reactjs
+{
+    width:98%;
+    height: 550px;
+    position: absolute;
+    top:178px;
+    left:10px;
+    background-color: #a2a8d3;
+    display: none;
+}
+#reactphoto
+{
+    width: 600px;
+    height:400px;
+    position: absolute;
+    top:100px;
+    left:-100px;
+}
+#reactmatter
+{
+    width: 1200px;
+    height:600px;
+    position: absolute;
+    left:300px;
+    top:100px;
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+#react
+{
+    height: auto;
+    width: 700px;
+    position: absolute;
+    left:700px;
+    top:250px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.667);
+}
+#matter7
+{
+    width: 500px;
+    font-size: 18px;
+    color:black;
+    position: relative;
+}
+#skill
+{
+    height: 8vh;
+}
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <ul id="list" type="none">
+             <img src="./photos/rotate.png" id="rotate">
+             <a href="./MenuBar.html"><li class="items">About</li></a>
+             <a href="./Skills.html" ><li class="items" id="skill">Skills</li></a>
+             <a href="./Login.html"><li class="items" id="login">Login</li></a>
+             <a href="./signup.html"><li class="items">SignUp</li></a>
+        </ul>
+     </div>
+     <div id="main">
+        <input type="radio" id="check" value="web" onclick="move2()" name="a"><label id="web">Web Technologies</label>
+        <input type="radio" id="check1" value="java" onclick="move1()" name="a"><label id="web1">Java</label>
+        <input type="radio" id="check2" value="sql" onclick="move3()" name="a"><label id="web2">SQL</label>
+        <input type="radio" id="check4" value="reactjs" name="a" onclick="move4()"><label id="web3">React-Js</label>
+     </div>
+      <div id="webtechnology" aria-describedby="slider">
+        <div id="image">
+            <table>
+                <tr>
+                    <td><img src="./photos/html.jpeg" id="html"></td>
+                    <td id="abouthtml">HTML(Hyper Text Markup Language) it is introduced by Tim Berners-Lee. And it is markup language which is used to build the building block of a webpage.In HTML we have predefined tags and elements by using we markup the webpage,so we call it as markup language
+                    </td>
+                </tr>
+                <hr>
+                <tr>
+                    <td><img src="./photos/css.jpeg" id="css"></td>
+                    <td id="aboutcss">CSS(Cascading Style Sheet) introduced by Håkon Wium Lie.It is a style sheet language whic is used to describe the presentation of a webpage. </td>
+                </tr>
+                <tr>
+                    <td><img src="./photos/js.jpeg" id="js"></td>
+                    <td id="aboutjs">JS(Java Script) introduced by Brendan Eich in 1995.<br>It is a high level object based programming lanuguage<br> which is used to develop dynamic webpage</td>
+                </tr>
+            </table>
+            <details id="learn">
+                <summary>Why We Need To Learn HTML,CSS,JS</summary>
+                <ol id="ol1">
+                    <li>Develop Problem-Solving Skills</li>
+                    <li>Self-Learning</li>
+                    <li>Easy To Learn</li>
+                </ol>
+            </details>
+        </div>
+        </div>
+        <div id="java">
+            <table>
+                <tr>
+                    <td><img src="./photos/java.png" id="javaimg"></td>
+                    <td id="javacontect">Java is a high-level,general-purpose,object-oriented,and secure programming language developedby James Gosling at Sun Microsystems, Inc. in 1991.<br><br> It is formally known as OAK. In 1995, Sun Microsystemchanged the name to Java. In 2009, Sun Microsystem takeover by Oracle Corporation.We Can develop web applications as well as dynamic application using Java.</td>
+                </tr>
+            </table>
+            <details id="why">
+                <summary>Why We Have To Learn Java</summary>
+                <ul id="oll" type="1">
+                    <li>1. Java is Easy to Learn</li>
+                    <li>2. Java has a Large Community</li>
+                    <li>3. Java has Multiple Open Source Libraries</li>
+                    <li>4. Java has Powerful Development Tools</li>
+                    <li>5. Java is Platform Independent</li>
+                    <li>6. Java is Versatile</li>
+                </ul>
+            </details>
+     </div> 
+     <div id="sql">
+           <table>
+            <tr>
+                <td><img src="./photos/sql.jpg" id="sqlimg"></td>
+                <td id="sqlmatter"><p id="sqlmatter">SQL stands for Structured Query Language and is a computer language that we use to interact with a relational database.<br><br>SQL is a tool for organizing,managing, and retrieving archived data from a computer database.<br><br>The original name was given by IBM as Structured English Query Language, abbreviated by the acronym SEQUEL.<br><br> When data needs to be retrieved from a database, SQL is used to make the request.<br><br>The DBMS processes the SQL query retrieves the requested data and returns it to us. Rather,<br><br> SQL statements describe how a collection of data should be organized or what data should be extracted or added to the database.</p</td>
+            </tr>
+           </table>
+           <details id="heading">
+            <summary>Why We Need To Learn SQL ? </summary>
+            <ol id="sqll">
+                <li>1. A Programming Language Not Only Limited To Programming Tasks</li><br>
+                <li>2. Almost Every Data Technology Supports SQL or a Flavor of It</li><br>
+                <li>3. Helpful in Handling Huge Amounts of Structured Data</li><br>
+                <li>4. A Useful Tool for Data Analytics</li><br>
+            </ol>
+           </details>
+     </div>
+     <div id="reactjs">
+        <table>
+            <tr>
+                <td><img src="./photos/react.png" width="80px" height="50px" id="reactphoto"></td>
+                <td id="reactmatter">ReactJS is an open-source JavaScript library used to create user interfaces in a declarative and efficient way. It is a component-based front-end library responsible only for the view layer of a Model View Controller(MVC) architecture. React is used to create modular user interfaces and promotes the development of reusable UI components that display dynamic data.</td>
+            </tr>
+        </table>
+        <details id="react">
+            <summary>What Is The Use Of React-Js</summary>
+            <ol id="matter7">
+                <li>1. ReactJS uses a declarative paradigm that allows for applications to be both effective and flexible.</li><br>
+                <li>2. It creates simple views for each state in your application and efficiently updates and renders just the right component as your data changes.</li><br>
+                <li>3. The declarative view makes your code more predictable and easier to debug.</li><br>
+                <li>4. A component can also keep track of its internal state, for example, a TabList component can hold a variable for the open tab in memory</li>
+            </ol>
+        </details>
+     </div>
+     <script>
+        function move1()
+        {
+            var a=document.getElementById("check1").value
+            console.log(typeof a)
+            if(a=='java')
+            {
+                document.getElementById("webtechnology").style.display="none"
+                document.getElementById("java").style.display="block"
+                document.getElementById("sql").style.display="none"
+                document.getElementById("reactjs").style.display="none"
+            }
+        }
+        function move2()
+        {
+            var b=document.getElementById("check").value
+            if(b=='web')
+            {
+                document.getElementById("webtechnology").style.display="flex"
+                document.getElementById("java").style.display="none"
+                document.getElementById("sql").style.display="none"
+                document.getElementById("reactjs").style.display="none"
+            }
+        }
+        function move3()
+        {
+            var c=document.getElementById("check2").value
+            if(c=='sql')
+            {
+                document.getElementById("sql").style.display="flex"
+                document.getElementById("webtechnology").style.display="none"
+                document.getElementById("java").style.display="none"
+                document.getElementById("reactjs").style.display="none"
+            }
+        }
+        function move4()
+        {
+            var c=document.getElementById("check4").value
+            if(c=='reactjs')
+            {
+                document.getElementById("reactjs").style.display="flex"
+                document.getElementById("sql").style.display="none"
+                document.getElementById("webtechnology").style.display="none"
+                document.getElementById("java").style.display="none"
+            }
+        }
+    //    var number=-1;
+    //     function slider()
+    //     {
+    //         var a=["webtechnology","java","sql"]
+    //         number++;
+    //         if(number==0)
+    //         {
+    //             document.getElementById(a[number]).style.display="flex"
+    //             document.getElementById(a[number+1]).style.display="none"
+    //             document.getElementById(a[number+2]).style.display="none"
+    //         }
+    //         else if(number==1)
+    //         {
+    //             document.getElementById(a[number]).style.display="flex"
+    //             document.getElementById(a[number-1]).style.display="none"
+    //             document.getElementById(a[number-1]).style.display="none"
+    //         }
+    //         else if(number==2)
+    //         {
+    //             document.getElementById(a[number]).style.display="flex"
+    //             document.getElementById(a[number-1]).style.display="none"
+    //             document.getElementById(a[number-1]).style.display="none"
+    //             number=-1
+    //         }
+    //     }
+    //     setInterval(slider,2000)
+     </script>
+</body>
+</html>
